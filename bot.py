@@ -35,4 +35,11 @@ async def eco(ctx):
         "Каждое сохраненное дерево может поглотить около 21 кг углекислого газа в год.",
     ]
     await ctx.send(f"Рандомный факт : random.choice(facts)")
+@bot.command()
+async def help(ctx):
+    helps = [
+        "howlon - узнать сколько лет разлагается вещь",
+        "eco - узнать факты o экологии",
+    ]
+    await ctx.send(f"Даная команда : random.choice(helps)")
 bot.run("ТОКЕН")
